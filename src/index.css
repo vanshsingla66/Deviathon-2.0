@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Geist+Mono:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  
+  --color-midnight: #010103;
+  --color-iris: #818CF8;
+  --color-aurora: #2DD4BF;
+  --color-chrome: #E2E8F0;
+}
+
+@layer base {
+  body {
+    @apply bg-midnight text-chrome font-sans antialiased selection:bg-iris/30 selection:text-aurora;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-2xl bg-white/[0.03] border border-white/10;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-linear-to-r from-iris via-chrome to-aurora;
+  }
+
+  .chrome-shadow {
+    text-shadow: 0 0 20px rgba(226, 232, 240, 0.3);
+  }
+}
+
+canvas {
+  touch-action: none;
+}
+
+* {
+  cursor: none;
+}
+
+@media (max-width: 768px) {
+  * {
+    cursor: auto;
+  }
+}
+
