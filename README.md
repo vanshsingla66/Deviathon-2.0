@@ -155,7 +155,7 @@ src/
 
 ## 🌍 Live Demo
 
-👉 *(Add your deployed link here — Vercel recommended)*
+👉 https://deviathon-2-0.onrender.com/
 
 ## 🚀 Deploying on Render
 
@@ -193,7 +193,7 @@ All rights reserved.
 
 ## 💡 Author
 
-Built by **Vansh Singla**
+Built by **Vansh Singla && Devang Mittal**
 Frontend Engineer • UI/UX Designer • Product Builder
 
 ---
