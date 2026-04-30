@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Run Locally
 
 **Prerequisites:**  Node.js
