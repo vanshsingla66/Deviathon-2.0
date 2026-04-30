@@ -157,6 +157,21 @@ src/
 
 👉 *(Add your deployed link here — Vercel recommended)*
 
+## 🚀 Deploying on Render
+
+This project is set up as a Render static site.
+
+1. Push the repository to GitHub.
+2. In Render, create a new Static Site from the repo.
+3. Render will read [render.yaml](render.yaml) at the project root.
+4. Use the default build command `npm ci && npm run build` and publish directory `dist`.
+5. If you want to use a manual setup instead of Blueprint, choose:
+  - Build Command: `npm ci && npm run build`
+  - Publish Directory: `dist`
+  - Rewrite rule: `/* -> /index.html`
+
+The app does not require a runtime server for deployment, so a static site is the simplest Render target.
+
 ---
 
 ## 🧠 What Makes This Special

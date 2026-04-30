@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: deviathon-2-0
+    env: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
